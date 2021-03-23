@@ -32,11 +32,16 @@ export class HotelRegistroComponent implements OnInit {
     }
     return this.personasRegistradas;
   }
-
-  calcularDia(){
+calcularTarifa(){
+  
+}
+  calcularDia() {
     var Xmas95 = new Date(this.persona.fecha);
-var weekday = Xmas95.getDay();
-    if(weekday!=0){}
+    var weekday = Xmas95.getDay();
+    if (weekday >= 5 || weekday == 0) {
+      return 'A';
+    }
+    return 'B';
 
   }
 }
