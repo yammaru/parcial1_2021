@@ -3,5 +3,5 @@ export class Hotel {
     nombre: string;
     apellido: string;
     hotel: string;
-    Fecha: string;
+    fecha: string;
 }

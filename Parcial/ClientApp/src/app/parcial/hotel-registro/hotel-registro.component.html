@@ -1,19 +1,19 @@
 <form>
     <div class="form-group">
-        <label for="exampleInputEmail1">Identificacion</label>
-        <input type="number" class="form-control" [(ngModel)]="persona.identificacion">
+        <label>Identificacion</label>
+        <input type="number" class="form-control" [(ngModel)]="hotel.identificacion">
     </div>
     <div class="form-group">
-        <label for="exampleInputPassword1">Nombre</label>
-        <input type="text" class="form-control">
+        <label>Nombre</label>
+        <input type="text" class="form-control" [(ngModel)]="hotel.nombre">
     </div>
     <div class="form-group">
         <label>Apellido</label>
-        <input type="text" class="form-control">
+        <input type="text" class="form-control" [(ngModel)]="hotel.Apellido">
     </div>
     <div class="form-group">
         <label>Hotel</label>
-        <select id="sexo" [(ngModel)]="sexo" name="sexo " class="form-control" placeholder="seleccione...">
+        <select type="text" class="form-control" [(ngModel)]="hotel.hotel">
         <option value="HB">HOTEL BUENAVISTA</option>
         <option value="HBC ">HOTEL BALCON DEL CESAR</option>
         <option value="HC">HOTEL CHIMILA</option>
@@ -21,7 +21,7 @@
     </div>
     <div class="form-group">
         <label>Fecha de Hospedaje</label><br>
-        <input type="date" id="fechaHospedaje" name="trip-start" value="2018-07-22" min="2018-01-01" max="2025-12-31">
+        <input type="date" [(ngModel)]="hotel.fecha" min="2018-01-01" max="2025-12-31">
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" (click)="RH" class="btn btn-primary">Submit</button>
 </form>
