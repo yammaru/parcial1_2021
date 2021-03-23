@@ -3,13 +3,11 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
-
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
-import { ApartamentoConsultaComponent } from './mita/apartamento-consulta/apartamento-consulta.component';
 import { HotelConsultaComponent } from './parcial/hotel-consulta/hotel-consulta.component';
 import { HotelRegistroComponent } from './parcial/hotel-registro/hotel-registro.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -21,7 +19,6 @@ import { AppRoutingModule } from './app-routing.module';
     HomeComponent,
     CounterComponent,
     FetchDataComponent,
-    ApartamentoConsultaComponent,
     HotelConsultaComponent,
     HotelRegistroComponent
   ],
