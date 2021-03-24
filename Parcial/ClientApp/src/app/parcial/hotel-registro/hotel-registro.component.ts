@@ -33,7 +33,13 @@ export class HotelRegistroComponent implements OnInit {
     return this.personasRegistradas;
   }
 calcularTarifa(){
-  
+  if(this.calcularDia()=='A'){
+    if(this.persona.hotel=='HB'){
+      this.persona.tarifa=100000;
+    }if(this.persona.hotel=='HC'){this.persona.tarifa=85000;}else{this.persona.tarifa=95000;}
+  }else{if(this.persona.hotel=='HB'){
+    this.persona.tarifa=80000;
+  }if(this.persona.hotel=='HC'){this.persona.tarifa=78000;}else{this.persona.tarifa=75000;}}
 }
   calcularDia() {
     var Xmas95 = new Date(this.persona.fecha);

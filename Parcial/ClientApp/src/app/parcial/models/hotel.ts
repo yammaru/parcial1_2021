@@ -4,4 +4,5 @@ export class Hotel {
     apellido: string;
     hotel: string;
     fecha: string;
+    tarifa:number
 }
