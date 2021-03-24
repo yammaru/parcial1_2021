@@ -13,7 +13,8 @@ export class HotelRegistroComponent implements OnInit {
 
   ngOnInit() {  this.persona = new Hotel();
   }
-  RH() {
+  add() {
+    
     this.personasRegistradas = this.obtenerPuls();
     this.personasRegistradas.push(this.persona);
 
