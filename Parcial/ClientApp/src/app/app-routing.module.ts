@@ -5,7 +5,7 @@ import { HotelRegistroComponent } from './parcial/hotel-registro/hotel-registro.
 import { HotelConsultaComponent } from './parcial/hotel-consulta/hotel-consulta.component';
 
 const routes: Routes = [
-  { path: 'rh', component:HotelRegistroComponent},
+  { path: 'registrohotel', component:HotelRegistroComponent},
   { path: 'ch', component: HotelConsultaComponent}
 ];
 
