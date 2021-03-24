@@ -1,30 +1,30 @@
 <form>
     <div class="form-group">
         <label>Identificacion</label>
-        <input type="text" id="identificacion" class="form-control" [(ngModel)]="hotel.identificacion">
+        <input type="text" name="identificacion" id="identificacion" class="form-control">
     </div>
-    <div class="form-group">
+    <div class="form-group ">
         <label>Nombre</label>
-        <input type="text" class="form-control" id="nombre" [(ngModel)]="hotel.nombre">
+        <input type="text " name="nombre " class="form-control " id="nombre ">
     </div>
-    <div class="form-group">
+    <div class="form-group ">
         <label>Apellido</label>
-        <input type="text" id="apellido" class="form-control" [(ngModel)]="hotel.apellido">
+        <input type="text " name="apellido " id="apellido " class="form-control ">
     </div>
-    <div class="form-group">
+    <div class="form-group ">
         <label>Hotel</label>
-        <select type="text" id="hotel" class="form-control" [(ngModel)]="hotel.hotel">
-        <option value="HB">HOTEL BUENAVISTA</option>
+        <select type="text " name="hotel " id="hotel " class="form-control ">
+        <option value="HB ">HOTEL BUENAVISTA</option>
         <option value="HBC ">HOTEL BALCON DEL CESAR</option>
-        <option value="HC">HOTEL CHIMILA</option>
+        <option value="HC ">HOTEL CHIMILA</option>
 </select>
     </div>
-    <div class="form-group">
+    <div class="form-group ">
         <label>Fecha de Hospedaje</label><br>
-        <input id="fecha" type="date" [(ngModel)]="hotel.fecha" min="2018-01-01" max="2025-12-31">
+        <input id="fecha " name="fecha " type="date" min="2018-01-01 " max="2025-12-31 ">
     </div>
-    <div class="form-group">
-        <label> SU TARIFA ES $ {{hotel.tarifa}}</label>
+    <div class="form-group ">
+        <label> SU TARIFA ES $ {{tarifa}}</label>
     </div>
-    <button type="submit" (click)="RH()" class="btn btn-primary">Submit</button>
+    <button type="button" class="btn btn-primary" (click)="add()">Submit</button>
 </form>
