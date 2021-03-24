@@ -18,5 +18,6 @@ export class HotelConsultaComponent implements OnInit {
   }
 this.personas  = this.personasRegistradas;
   }
+  borrar(){localStorage.removeItem('parcial1') ;}
 
 }
